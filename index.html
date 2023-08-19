@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .flex-container{
+            border-style: solid;
+            border-width: 5px 20px;
+        }
+      
+
+        .flex-container {
+        display:flex;
+        flex-direction: row;
+        font-size: 20px;
+        text-align: center;
+        }
+
+        .flex-item-left {
+        color: aliceblue;
+        background-color: black;
+        padding: 20px;
+        flex: 30%;
+        text-align: center;
+        }
+
+        .flex-item-right {
+        color: aliceblue;
+        background-color: black;
+        padding: 20px;
+        flex: 90%;
+        text-align: center;
+        }
+
+        /* Responsive layout - makes a one column-layout instead of two-column layout */
+        @media (max-width: 800px) {
+        .flex-container {
+            flex-direction: column;
+        }
+        }
+    </style>
+</head>
+<body>
+
+<div class="w3-container">
+  <div class="w3-row">
+    <div class="w3-col m3 w3-medium w3-black w3-center">    
+      <p>LOGOBAKERY</p>
+    </div>
+    <div class="w3-col m6 w3-medium w3-black w3-center">
+     <p><a href="">Services</a>  <a href="">Project</a>  <a href="">About</a></p>
+    
+    </div>
+    <div class="w3-col m3 w3-medium w3-black w3-center" style="height: 53px;">
+      <p><button class="w3-btn w3-round-xlarge w3-blue" style="margin-top: -9px;">Contact</button></p>
+    </div>
+</div>
+</div>
+<br><br><br>
+
+<div class="flex-container">
+    <div class="flex-item-left">Services</div>
+    <div class="flex-item-left">Projuct</div>
+    <div class="flex-item-left">About</div>
+    <div class="flex-item-right">
+        <button class="w3-btn w3-round-xxlarge w3-blue">Contact</button>
+    </div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right">LOGOBAKERY</div>
+    <div class="flex-item-right"></div>
+  </div>
+
+  <br><br><br>
+  <div class="flex-container">
+    
+    <div class="flex-item-right">LOGOBAKERY</div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-right"></div>
+    <div class="flex-item-left">Services</div>
+    <div class="flex-item-left">Projuct</div>
+    <div class="flex-item-left">About</div>
+    <div class="flex-item-right">
+        <button class="w3-btn w3-round-xxlarge w3-blue" >Contact</button>
+    </div>
+    <div class="flex-item-right"></div>
+    
+  </div>
+
+  </body>
+</html>
